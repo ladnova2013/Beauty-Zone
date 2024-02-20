@@ -1,0 +1,54 @@
+.prosedures-section {
+  z-index: 1;
+  min-width: 0;
+  margin-top: 20px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-bottom: 96px;
+    margin-top: -700px;
+  }
+
+  &__slide {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    top: 372px;
+    left: 115px;
+    right: 77px;
+    color: var(--color-secondary);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.18;
+    width: 152px;
+    text-align: center;
+  }
+
+  &__image {
+    z-index: -1;
+    border-radius: 4px 120px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 42px 144px;
+  background-color: var(--color-primary);
+  border-radius: 48px;
+  transition: opacity 0.2s visibility 0.2s;
+
+  &__btn-close {
+    position: absolute;
+    right: 42px;
+    top: 42px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: Play;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--color-secondary);
+  }
+
+  &__text {
+    color: var(--color-secondary);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.18;
+    width: 274px;
+    margin: 48px auto 32px;
+    text-align: center;
+
+    &_accent {
+      color: var(--color-brand);
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}

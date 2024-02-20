@@ -1,0 +1,32 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+  }
+
+  &__control {
+    display: flex;
+    padding: 18px 32px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.15;
+    border-radius: 32px;
+    border: 2px solid var(--beauty-landing-2-5, #747272);
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      background-color: #747272;
+      color: var(--color-secondary);
+    }
+
+    &::placeholder {
+      color: var(--color-secondary);
+      font-size: 13px;
+      line-height: 1.15;
+    }
+  }
+}

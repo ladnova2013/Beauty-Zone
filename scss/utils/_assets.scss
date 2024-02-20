@@ -1,0 +1,95 @@
+.blue-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: flex;
+    position: absolute;
+    left: 1312px;
+    top: 30px;
+    animation-name: blue-star;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.grey-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    left: 1313px;
+    top: 240px;
+    animation-name: grey-star;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.black-star {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+    position: absolute;
+    left: 840px;
+    top: 350px;
+    animation-name: black-star;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.mobile-black-star {
+  display: block;
+  position: absolute;
+  left: 260px;
+  top: 440px;
+  animation-name: mobile-black-star;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+@keyframes blue-star {
+  from {
+    transform: rotate(0) scale(0);
+  }
+
+  to {
+    transform: rotate(360deg) scale(1.05);
+  }
+}
+
+@keyframes grey-star {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes black-star {
+  from {
+    transform: rotate(0) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+@keyframes mobile-black-star {
+  from {
+    transform: rotate(0) scale(1);
+  }
+
+  to {
+    transform: rotate(360deg) scale(0);
+  }
+}
